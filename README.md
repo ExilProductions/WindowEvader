@@ -12,6 +12,16 @@ It's a fun little distraction that makes your desktop feel a bit more alive.
 
 Just run the `WindowEvader.exe` file. You can build it yourself using the provided solution file.
 
+## Tweaking the Behavior
+
+If you want to change how the windows react, you can edit the `Program.cs` file and change these values at the top:
+
+*   `ProximityThreshold`: This is how close your mouse has to be to a window to make it move. A smaller number means you have to get closer.
+*   `BaseMoveDistance`: This is the base distance the window will jump away.
+*   `UpdateIntervalMilliseconds`: This controls how often the program checks your mouse position. A lower number will make the movements smoother, but will use a bit more CPU.
+
+After changing the values, you'll need to rebuild the project.
+
 ## How to stop it
 
 The program runs in the background without a visible window. To stop it, you can run the `kill_window_evader.bat` script located in the `Scripts` folder.
